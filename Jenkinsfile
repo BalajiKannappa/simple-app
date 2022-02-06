@@ -12,7 +12,7 @@ node{
 
     stage('Static code anlaysis'){
     
-            WithSonarQubeEnv('sonar-qube'){
+            withSonarQubeEnv('sonar-qube'){
                 sh "mvn sonar:sonar"  
                }
         }
